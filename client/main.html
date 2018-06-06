@@ -1,0 +1,42 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=AIzaSyA2V5pCNyMmYGco1LryF1DbfOG3WmopTBA"
+></script>
+  <title>firstApp</title>
+
+
+</head>
+
+
+<!--<>-->
+
+  <body>
+
+    {{> Template.dynamic template=currentPage}}
+
+
+
+</body>
+
+<template name="process">
+  <div id="error"> <p1 > Type in a city </p1> </div>
+  <div class="background">
+    <h1> WeatherApp </h1>
+  </div>
+  <input type="text" id="city" placeholder=" City.." style="color: #FCFBFB  ;"><br>
+
+  <button type="button" id="submit" data-page='display' >Check Weather </button>
+
+
+
+
+
+</template>
+
+
+<template name="display">
+  <div class="container" ></div>
+  <div id="display"></div>
+<button type="button" id="return" data-page='process' >check more cities</button>
+
+</template>
